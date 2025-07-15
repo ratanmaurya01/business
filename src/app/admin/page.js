@@ -8,7 +8,7 @@ import "react-markdown-editor-lite/lib/index.css"; // ✅ CSS import here
 
 // Dynamically import the editor (client-side only)
 const MdEditor = dynamic(() => import('react-markdown-editor-lite'), {
-  ssr: false,
+    ssr: false,
 });
 
 
