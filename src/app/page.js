@@ -9,21 +9,20 @@ const categoryData = { 'Stock Market': [{ id: 1, title: 'Nifty vs Sensex – Kya
 export default function Home() {
   return (
 
-    <main className="min-h-screen bg-white text-gray-800"> {/* Navbar */} <nav className="flex justify-between items-center px-6 py-4 shadow-md bg-white sticky top-0 z-50"> <div className="text-2xl font-bold text-green-600">Monymontra</div> <div className="space-x-4"> <Link href="/">Home</Link> <Link href="/stock-market">Stock Market</Link> <Link href="/ipo">IPO</Link> <Link href="/mutual-funds">Mutual Funds</Link> <Link href="/career">Career</Link> <Link href="/contact">Contact</Link> </div> </nav>
-
-      {/* Hero Section */}
-      <section className="text-center px-4 py-12 bg-gradient-to-br from-green-100 to-blue-100">
+    <main className="mt-10">
+      <section className="text-center px-4  bg-gradient-to-br from-green-100 to-blue-100">
         <h1 className="text-4xl font-bold text-green-700">Monymontra – Paisa, Career aur Bazaar ka Asli Mantra</h1>
         <p className="mt-4 text-lg text-gray-700">
           Har din naye blogs Hindi mein – Stock, SIP, IPO, Naukri aur aur bhi bahut kuch!
         </p>
-        <button className="mt-6 bg-green-600 text-white px-6 py-2 rounded-xl shadow hover:bg-green-700">
+        <button className="mt-6 bg-green-600 text-white px-6 py-2 
+        rounded-xl shadow hover:bg-green-700">
           🔔 Latest Blog Padhein
         </button>
       </section>
-
+      
       {/* Featured Posts */}
-      <section className="px-6 py-10">
+      <section className="">
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">🔥 Featured Blogs</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {featuredBlogs.map((blog) => (
